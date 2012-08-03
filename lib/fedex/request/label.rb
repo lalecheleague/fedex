@@ -13,7 +13,8 @@ module Fedex
         @label_specification = {
           :label_format_type => 'COMMON2D',
           :image_type => 'PDF',
-          :label_stock_type => 'PAPER_LETTER'
+          :label_stock_type => 'PAPER_LETTER',
+          :label_printing_orientation => 'TOP_EDGE_OF_TEXT_FIRST'
         }
         @label_specification.merge!(options[:label_specification]) if options[:label_specification]
       end
